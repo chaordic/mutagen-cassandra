@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>com.toddfast.mutagen</groupId>
 			<artifactId>mutagen</artifactId>
-			<version>0.3.1-SNAPSHOT</version>
+			<version>0.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-codec</groupId>
@@ -165,4 +165,17 @@
       		</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+        	<repository>
+        		<id>platform-artifactory</id>
+        		<name>platform-artifactory-releases</name>
+        		<url>http://platform-repository-01.chaordicsystems.com:8081/artifactory/platform</url>
+    		</repository>
+    		<snapshotRepository>
+        		<id>platform-artifactory</id>
+        		<name>platform-artifactory-snapshots</name>
+        		<url>http://platform-repository-01.chaordicsystems.com:8081/artifactory/platform</url>
+    		</snapshotRepository>
+	</distributionManagement>
 </project>
